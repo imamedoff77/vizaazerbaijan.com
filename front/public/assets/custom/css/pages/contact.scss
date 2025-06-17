@@ -1,0 +1,127 @@
+.contact-page {
+    padding: 50px 0;
+
+    .contact-container {
+        max-width: 900px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .top {
+            .title {
+                text-align: center;
+                font-size: 45px;
+                font-weight: 700;
+                color: #101828;
+                margin-bottom: 30px;
+            }
+
+            .description {
+                margin-top: 60px;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                color: rgba(16, 24, 40, 0.6);
+                text-align: justify;
+            }
+        }
+
+        .bottom {
+            max-width: 600px;
+            width: 100%;
+            margin: 0 auto;
+
+            label {
+                font-size: 16px;
+                font-weight: 400;
+                color: rgba(16, 24, 40, 0.6);
+                margin-bottom: 10px;
+            }
+
+            input, input::placeholder {
+                color: rgba(16, 24, 40, 0.6);
+            }
+
+            .btn-primary {
+                padding: 10px 25px;
+                background-color: #1d4ed8;
+                border-radius: 4px;
+                font-size: 15px;
+                font-weight: 400;
+
+                &:hover {
+                    background-color: #1e40af;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 991px) {
+    .contact-page {
+        .contact-container {
+            max-width: 768px;
+
+            .top {
+                .title {
+                    font-size: 25px;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: 15px;
+                }
+            }
+
+            .bottom {
+                max-width: 600px;
+
+                label {
+                    font-size: 15px;
+                }
+
+                input, input::placeholder {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .contact-page {
+        .contact-container {
+            max-width: 100%;
+            margin: 0;
+            padding: 0 15px;
+
+            .top {
+                .title {
+                    font-size: 25px;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: 15px;
+                }
+            }
+
+            .bottom {
+                max-width: 100%;
+
+                label {
+                    font-size: 14px;
+                }
+
+                input, input::placeholder {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

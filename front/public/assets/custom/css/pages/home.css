@@ -1,0 +1,482 @@
+.banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 585px;
+}
+.banner .banner-img-container {
+  background-image: url("../../images/baku.webp");
+  background-size: cover;
+  width: 100%;
+  height: 585px;
+}
+.banner .banner-img-container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(49, 49, 49, 0.54);
+  z-index: 1;
+}
+.banner .banner-content {
+  width: 100%;
+  height: 355px;
+  position: absolute;
+  top: 190px;
+  z-index: 9;
+}
+.banner .banner-content .service-container .container .top {
+  margin-bottom: 70px;
+}
+.banner .banner-content .service-container .container .top h3 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.banner .banner-content .service-container .container .top > p {
+  font-weight: 700;
+}
+
+.banner-overlay {
+  margin-top: 455px;
+}
+
+@media only screen and (max-width: 991px) {
+  .banner {
+    height: 425px;
+  }
+  .banner .banner-img-container {
+    height: 425px;
+  }
+  .banner .banner-content {
+    height: 300px;
+    top: 115px;
+    z-index: 9;
+  }
+  .banner .banner-content .service-container .container .top {
+    margin-bottom: 70px;
+  }
+  .banner .banner-content .service-container .container .top h3 {
+    font-size: 25px;
+  }
+  .banner .banner-content .service-container .container .top > p {
+    font-size: 16px;
+  }
+  .banner-overlay {
+    margin-top: 295px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .banner {
+    height: 640px;
+  }
+  .banner .banner-img-container {
+    height: 640px;
+  }
+  .banner .banner-content {
+    height: 500px;
+    top: 130px;
+  }
+  .banner .banner-content .service-container .container .top {
+    margin-bottom: 40px;
+  }
+  .banner .banner-content .service-container .container .top h3 {
+    font-size: 22px;
+    margin-bottom: 50px;
+  }
+  .banner .banner-content .service-container .container .top > p {
+    font-size: 14px;
+  }
+  .banner-overlay {
+    margin-top: 530px;
+  }
+}
+.how-it-works {
+  padding: 80px 0;
+}
+.how-it-works .container .section-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: #101828;
+}
+.how-it-works .container .section-description {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(16, 24, 40, 0.6);
+}
+.how-it-works .container .steps {
+  margin-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+.how-it-works .container .steps .step {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+.how-it-works .container .steps .step .icon {
+  width: 64px;
+  height: 64px;
+  background-color: #0092BC;
+  color: #fff;
+  border-radius: 50%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+.how-it-works .container .steps .step .icon svg {
+  width: 32px;
+  height: 32px;
+}
+.how-it-works .container .steps .step .title {
+  font-size: 19px;
+  font-weight: 600;
+  color: #101828;
+}
+.how-it-works .container .steps .step .description {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(16, 24, 40, 0.6);
+}
+.how-it-works .container .steps .step:last-child .icon {
+  background-color: #00AF66;
+}
+
+.what-is-price, .purpose-of-visit {
+  padding: 80px 0;
+  background: #101828;
+}
+.what-is-price > .container, .purpose-of-visit > .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 80px;
+}
+.what-is-price > .container > .top, .purpose-of-visit > .container > .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.what-is-price > .container > .top > .left, .purpose-of-visit > .container > .top > .left {
+  width: 50%;
+  padding-right: 100px;
+}
+.what-is-price > .container > .top > .left .title, .purpose-of-visit > .container > .top > .left .title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+}
+.what-is-price > .container > .top > .left p, .purpose-of-visit > .container > .top > .left p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  text-align: justify;
+  line-height: 29px;
+}
+.what-is-price > .container > .top > .right, .purpose-of-visit > .container > .top > .right {
+  width: 50%;
+  position: relative;
+}
+.what-is-price > .container > .top > .right .img, .purpose-of-visit > .container > .top > .right .img {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+}
+.what-is-price > .container > .top > .right .img img, .purpose-of-visit > .container > .top > .right .img img {
+  width: 100%;
+  max-width: 569px;
+  border-radius: 50% 0 50% 0;
+  -webkit-box-shadow: 0 40px 40px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 40px 40px 0 rgba(0, 0, 0, 0.2);
+}
+.what-is-price > .container > .top > .right .figure .top, .what-is-price > .container > .top > .right .figure .bottom, .purpose-of-visit > .container > .top > .right .figure .top, .purpose-of-visit > .container > .top > .right .figure .bottom {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.what-is-price > .container > .top > .right .figure .top .left, .what-is-price > .container > .top > .right .figure .top .right, .what-is-price > .container > .top > .right .figure .bottom .left, .what-is-price > .container > .top > .right .figure .bottom .right, .purpose-of-visit > .container > .top > .right .figure .top .left, .purpose-of-visit > .container > .top > .right .figure .top .right, .purpose-of-visit > .container > .top > .right .figure .bottom .left, .purpose-of-visit > .container > .top > .right .figure .bottom .right {
+  width: 50%;
+}
+.what-is-price > .container > .top > .right .figure .top .left .p-32, .what-is-price > .container > .top > .right .figure .top .right .p-32, .what-is-price > .container > .top > .right .figure .bottom .left .p-32, .what-is-price > .container > .top > .right .figure .bottom .right .p-32, .purpose-of-visit > .container > .top > .right .figure .top .left .p-32, .purpose-of-visit > .container > .top > .right .figure .top .right .p-32, .purpose-of-visit > .container > .top > .right .figure .bottom .left .p-32, .purpose-of-visit > .container > .top > .right .figure .bottom .right .p-32 {
+  width: 100%;
+  padding: 32px;
+}
+.what-is-price > .container > .top > .right .figure .top .left .p-32 .item, .what-is-price > .container > .top > .right .figure .top .right .p-32 .item, .what-is-price > .container > .top > .right .figure .bottom .left .p-32 .item, .what-is-price > .container > .top > .right .figure .bottom .right .p-32 .item, .purpose-of-visit > .container > .top > .right .figure .top .left .p-32 .item, .purpose-of-visit > .container > .top > .right .figure .top .right .p-32 .item, .purpose-of-visit > .container > .top > .right .figure .bottom .left .p-32 .item, .purpose-of-visit > .container > .top > .right .figure .bottom .right .p-32 .item {
+  width: 210px;
+  height: 210px;
+  padding: 0 0 100% 0;
+  background-color: #0092BC;
+  border-radius: 0 50% 0 50%;
+}
+.what-is-price > .container > .top > .right .figure .top .left .p-32 .item .inner, .what-is-price > .container > .top > .right .figure .top .right .p-32 .item .inner, .what-is-price > .container > .top > .right .figure .bottom .left .p-32 .item .inner, .what-is-price > .container > .top > .right .figure .bottom .right .p-32 .item .inner, .purpose-of-visit > .container > .top > .right .figure .top .left .p-32 .item .inner, .purpose-of-visit > .container > .top > .right .figure .top .right .p-32 .item .inner, .purpose-of-visit > .container > .top > .right .figure .bottom .left .p-32 .item .inner, .purpose-of-visit > .container > .top > .right .figure .bottom .right .p-32 .item .inner {
+  height: 1px;
+}
+.what-is-price > .container > .top > .right .figure .top .right .p-32 .item, .what-is-price > .container > .top > .right .figure .bottom .right .p-32 .item, .purpose-of-visit > .container > .top > .right .figure .top .right .p-32 .item, .purpose-of-visit > .container > .top > .right .figure .bottom .right .p-32 .item {
+  background-color: #E4002B;
+  border-radius: 50% 0 50% 0;
+}
+.what-is-price > .container > .top > .right .figure .bottom .left .p-32 .item, .purpose-of-visit > .container > .top > .right .figure .bottom .left .p-32 .item {
+  background-color: #fff;
+  border-radius: 50% 0 50% 0;
+}
+.what-is-price > .container > .top > .right .figure .bottom .right .p-32 .item, .purpose-of-visit > .container > .top > .right .figure .bottom .right .p-32 .item {
+  background-color: #00AF66;
+  border-radius: 0 50% 0 50%;
+}
+
+.purpose-of-visit {
+  background: #fff;
+  padding-top: 0;
+}
+.purpose-of-visit .line {
+  height: 160px;
+  border-bottom: 1px solid #ddd;
+}
+.purpose-of-visit > .container {
+  padding-top: 100px;
+}
+.purpose-of-visit > .container .top .left .title {
+  color: #101828;
+}
+.purpose-of-visit > .container .top .left p {
+  color: #101828;
+}
+.purpose-of-visit > .container .top .right .figure .bottom .left .p-32 .item {
+  background-color: #000;
+}
+.purpose-of-visit > .container .bottom .service-container .container .top h3 {
+  color: #101828;
+}
+.purpose-of-visit > .container .bottom .service-container .container .top > p {
+  color: rgba(16, 24, 40, 0.6);
+}
+.purpose-of-visit > .container .bottom .service-container .container .bottom .services .service p {
+  color: #101828;
+}
+
+.what-see-in-azerbaijan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #EEF4F7;
+  gap: 70px;
+}
+.what-see-in-azerbaijan .left {
+  width: 50%;
+}
+.what-see-in-azerbaijan .left img {
+  width: 100%;
+  border-top-right-radius: 120px;
+}
+.what-see-in-azerbaijan .right {
+  width: 50%;
+  padding: 0 10px;
+}
+.what-see-in-azerbaijan .right .title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #101828;
+  margin-bottom: 25px;
+}
+.what-see-in-azerbaijan .right p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #101828;
+  line-height: 29px;
+  text-align: justify;
+}
+.what-see-in-azerbaijan .right p a {
+  color: #2430ba;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .what-is-price > .container > .top > .left, .purpose-of-visit > .container > .top > .left {
+    padding-right: 50px;
+  }
+  .what-is-price > .container > .top > .left p, .purpose-of-visit > .container > .top > .left p {
+    margin: 0;
+    padding: 0;
+  }
+  .what-is-price > .container > .top > .right .img img, .purpose-of-visit > .container > .top > .right .img img {
+    width: 100%;
+  }
+  .what-is-price > .container > .top > .right .figure, .purpose-of-visit > .container > .top > .right .figure {
+    width: 100%;
+  }
+  .what-is-price > .container > .top > .right .figure .top .left .p-32 .item, .what-is-price > .container > .top > .right .figure .top .right .p-32 .item, .what-is-price > .container > .top > .right .figure .bottom .left .p-32 .item, .what-is-price > .container > .top > .right .figure .bottom .right .p-32 .item, .purpose-of-visit > .container > .top > .right .figure .top .left .p-32 .item, .purpose-of-visit > .container > .top > .right .figure .top .right .p-32 .item, .purpose-of-visit > .container > .top > .right .figure .bottom .left .p-32 .item, .purpose-of-visit > .container > .top > .right .figure .bottom .right .p-32 .item {
+    width: 100%;
+    height: 100%;
+  }
+  .what-see-in-azerbaijan {
+    gap: 15px;
+  }
+  .what-see-in-azerbaijan .right {
+    width: 50%;
+  }
+  .what-see-in-azerbaijan .right .title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #101828;
+    margin-bottom: 25px;
+  }
+  .what-see-in-azerbaijan .right p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #101828;
+    line-height: 29px;
+  }
+  .what-see-in-azerbaijan .right p a {
+    color: #2430ba;
+    text-decoration: none;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .how-it-works {
+    padding: 60px 0;
+  }
+  .how-it-works .container .section-title {
+    font-size: 23px;
+  }
+  .how-it-works .container .section-description {
+    font-size: 15px;
+  }
+  .how-it-works .container .steps {
+    margin-top: 80px;
+  }
+  .how-it-works .container .steps .step .title {
+    font-size: 17px;
+  }
+  .how-it-works .container .steps .step .description {
+    font-size: 15px;
+  }
+  .what-is-price, .purpose-of-visit {
+    padding: 50px 0;
+  }
+  .what-is-price > .container, .purpose-of-visit > .container {
+    gap: 50px;
+  }
+  .what-is-price > .container > .top, .purpose-of-visit > .container > .top {
+    gap: 30px;
+  }
+  .what-is-price > .container > .top > .left, .purpose-of-visit > .container > .top > .left {
+    width: 50%;
+    padding-right: 0;
+  }
+  .what-is-price > .container > .top > .left .title, .purpose-of-visit > .container > .top > .left .title {
+    font-size: 23px;
+  }
+  .what-is-price > .container > .top > .left p, .purpose-of-visit > .container > .top > .left p {
+    font-size: 15px;
+  }
+  .purpose-of-visit .line {
+    height: 60px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .how-it-works .container .section-title {
+    font-size: 20px;
+  }
+  .how-it-works .container .section-description {
+    font-size: 14px;
+  }
+  .how-it-works .container .steps {
+    margin-top: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 30px;
+  }
+  .how-it-works .container .steps .step {
+    width: 100%;
+  }
+  .how-it-works .container .steps .step .title {
+    font-size: 17px;
+  }
+  .how-it-works .container .steps .step .description {
+    font-size: 14px;
+  }
+  .what-is-price, .purpose-of-visit {
+    padding: 20px 0;
+  }
+  .what-is-price > .container > .top, .purpose-of-visit > .container > .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .what-is-price > .container > .top > .left, .purpose-of-visit > .container > .top > .left {
+    width: 100%;
+  }
+  .what-is-price > .container > .top > .left .title, .purpose-of-visit > .container > .top > .left .title {
+    font-size: 20px;
+    text-align: center;
+  }
+  .what-is-price > .container > .top > .left p, .purpose-of-visit > .container > .top > .left p {
+    font-size: 14px;
+  }
+  .what-is-price > .container > .top > .right, .purpose-of-visit > .container > .top > .right {
+    width: 100%;
+  }
+  .purpose-of-visit .line {
+    height: 80px;
+  }
+  .purpose-of-visit > .container {
+    padding-top: 20px;
+  }
+  .what-see-in-azerbaijan {
+    margin-top: 60px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .what-see-in-azerbaijan .left {
+    width: 100%;
+  }
+  .what-see-in-azerbaijan .right {
+    width: 100%;
+  }
+  .what-see-in-azerbaijan .right .title {
+    font-size: 20px;
+  }
+  .what-see-in-azerbaijan .right p {
+    font-size: 14px;
+  }
+}

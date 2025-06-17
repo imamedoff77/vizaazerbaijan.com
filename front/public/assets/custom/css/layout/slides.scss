@@ -1,0 +1,23 @@
+.footer-slides {
+  background: #F7F4E4;
+  padding: 40px 0;
+
+  .p-carousel-item {
+    align-items: center;
+  }
+
+  .slide-container {
+    display: flex;
+    justify-content: center;
+
+    .slide {
+      width: fit-content;
+      padding: 5px 10px;
+      border-radius: 16px;
+      background: #fff;
+      color: #333;
+      text-align: center;
+      cursor: pointer !important;
+    }
+  }
+}

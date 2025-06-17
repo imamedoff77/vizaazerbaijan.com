@@ -1,0 +1,511 @@
+@import "../reusable/banner";
+
+.how-it-works {
+    padding: 80px 0;
+
+    .container {
+        .section-title {
+            text-align: center;
+            font-size: 28px;
+            font-weight: 600;
+            color: #101828;
+        }
+
+        .section-description {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 400;
+            color: rgba(16, 24, 40, 0.6)
+        }
+
+        .steps {
+            margin-top: 120px;
+            display: flex;
+            gap: 15px;
+
+            .step {
+                width: 25%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 15px;
+
+                .icon {
+                    width: 64px;
+                    height: 64px;
+                    background-color: #0092BC;
+                    color: #fff;
+                    border-radius: 50%;
+                    display: grid;
+                    place-items: center;
+
+
+                    svg {
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+
+                .title {
+                    font-size: 19px;
+                    font-weight: 600;
+                    color: #101828;
+                }
+
+                .description {
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: rgba(16, 24, 40, 0.6);
+                }
+
+                &:last-child {
+                    .icon {
+                        background-color: #00AF66;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.what-is-price, .purpose-of-visit {
+    padding: 80px 0;
+    background: #101828;
+
+    > .container {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+
+        > .top {
+            display: flex;
+            align-items: center;
+
+            > .left {
+                width: 50%;
+                padding-right: 100px;
+
+                .title {
+                    font-size: 28px;
+                    font-weight: 600;
+                    color: #fff;
+                }
+
+                p {
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #fff;
+                    text-align: justify;
+                    line-height: 29px;
+                }
+            }
+
+            > .right {
+                width: 50%;
+                position: relative;
+
+                .img {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                        max-width: 569px;
+                        border-radius: 50% 0 50% 0;
+                        box-shadow: 0 40px 40px 0 rgba(0, 0, 0, 0.2);
+                    }
+                }
+
+                .figure {
+                    .top, .bottom {
+                        width: 100%;
+                        display: flex;
+
+                        .left, .right {
+                            width: 50%;
+
+                            .p-32 {
+                                width: 100%;
+                                padding: 32px;
+
+                                .item {
+                                    width: 210px;
+                                    height: 210px;
+                                    padding: 0 0 100% 0;
+                                    background-color: #0092BC;
+                                    border-radius: 0 50% 0 50%;
+
+                                    .inner {
+                                        height: 1px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .right {
+                            .p-32 {
+                                .item {
+                                    background-color: #E4002B;
+                                    border-radius: 50% 0 50% 0;
+                                }
+                            }
+                        }
+                    }
+
+                    .bottom {
+                        .left {
+                            .p-32 {
+                                .item {
+                                    background-color: #fff;
+                                    border-radius: 50% 0 50% 0;
+                                }
+                            }
+                        }
+
+                        .right {
+                            .p-32 {
+                                .item {
+                                    background-color: #00AF66;
+                                    border-radius: 0 50% 0 50%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.purpose-of-visit {
+    background: #fff;
+    padding-top: 0;
+
+    .line {
+        height: 160px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    > .container {
+        padding-top: 100px;
+
+        .top {
+            .left {
+                .title {
+                    color: #101828;
+                }
+
+                p {
+                    color: #101828;
+                }
+            }
+
+            .right {
+                .figure {
+                    .bottom {
+                        .left {
+                            .p-32 {
+                                .item {
+                                    background-color: #000;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottom {
+            .service-container {
+                .container {
+                    .top {
+                        h3 {
+                            color: #101828;
+                        }
+
+                        > p {
+                            color: rgba(16, 24, 40, 0.6);
+                        }
+                    }
+
+                    .bottom {
+                        .services {
+                            .service {
+                                p {
+                                    color: #101828;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.what-see-in-azerbaijan {
+    display: flex;
+    align-items: center;
+    background: #EEF4F7;
+    gap: 70px;
+
+    .left {
+        width: 50%;
+
+        img {
+            width: 100%;
+            border-top-right-radius: 120px;
+        }
+    }
+
+    .right {
+        width: 50%;
+        padding: 0 10px;
+
+        .title {
+            font-size: 28px;
+            font-weight: 600;
+            color: #101828;
+            margin-bottom: 25px;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            color: #101828;
+            line-height: 29px;
+            text-align: justify;
+
+            a {
+                color: #2430ba;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .what-is-price, .purpose-of-visit {
+        > .container {
+            > .top {
+                > .left {
+                    padding-right: 50px;
+
+                    p {
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+
+                > .right {
+                    .img {
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .figure {
+                        width: 100%;
+
+                        .top, .bottom {
+                            .left, .right {
+                                .p-32 {
+                                    .item {
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .what-see-in-azerbaijan {
+
+        gap: 15px;
+
+        .right {
+            width: 50%;
+
+            .title {
+                font-size: 28px;
+                font-weight: 600;
+                color: #101828;
+                margin-bottom: 25px;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                color: #101828;
+                line-height: 29px;
+
+                a {
+                    color: #2430ba;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 991px) {
+    .how-it-works {
+        padding: 60px 0;
+
+        .container {
+            .section-title {
+                font-size: 23px;
+            }
+
+            .section-description {
+                font-size: 15px;
+            }
+
+            .steps {
+                margin-top: 80px;
+
+                .step {
+                    .title {
+                        font-size: 17px;
+                    }
+
+                    .description {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    .what-is-price, .purpose-of-visit {
+        padding: 50px 0;
+
+        > .container {
+            gap: 50px;
+
+            > .top {
+                gap: 30px;
+
+                > .left {
+                    width: 50%;
+                    padding-right: 0;
+
+                    .title {
+                        font-size: 23px;
+                    }
+
+                    p {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    .purpose-of-visit {
+        .line {
+            height: 60px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .how-it-works {
+        .container {
+            .section-title {
+                font-size: 20px;
+            }
+
+            .section-description {
+                font-size: 14px;
+            }
+
+            .steps {
+                margin-top: 50px;
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+
+                .step {
+                    width: 100%;
+
+                    .title {
+                        font-size: 17px;
+                    }
+
+                    .description {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    .what-is-price, .purpose-of-visit {
+        padding: 20px 0;
+
+        > .container {
+            > .top {
+                flex-direction: column-reverse;
+
+                > .left {
+                    width: 100%;
+
+                    .title {
+                        font-size: 20px;
+                        text-align: center;
+                    }
+
+                    p {
+                        font-size: 14px;
+                    }
+                }
+
+                > .right {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .purpose-of-visit {
+        .line {
+            height: 80px;
+        }
+
+        > .container {
+            padding-top: 20px;
+        }
+    }
+
+    .what-see-in-azerbaijan {
+        margin-top: 60px;
+        flex-direction: column;
+        gap: 30px;
+
+        .left {
+            width: 100%;
+        }
+
+        .right {
+            width: 100%;
+
+            .title {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}

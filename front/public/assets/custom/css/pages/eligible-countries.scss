@@ -1,0 +1,151 @@
+.service-container {
+    margin-top: 100px;
+
+    .container {
+        .top {
+
+            h3 {
+                font-size: 45px;
+                color: #101828;
+                font-weight: 700;
+            }
+        }
+
+        .bottom {
+            .services {
+                .service {
+
+                    p {
+                        color: #101828;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.flags-section {
+    margin: 50px 0;
+
+    p {
+        font-size: 19px;
+        color: #101828;
+        text-align: center;
+    }
+
+    .flags {
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 40px;
+
+        .flag {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            width: 100%;
+
+            img {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+            }
+
+            span {
+                font-size: 23px;
+                font-weight: 600;
+                color: #101828;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 991px) {
+
+    .service-container {
+        margin-top: 40px;
+
+        .container {
+            .top {
+                h3 {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
+    .flags-section {
+        margin: 30px 0;
+
+        p {
+            font-size: 17px;
+        }
+
+        .flags {
+            margin-top: 80px;
+
+            .flag {
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+
+                span {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .flags-section {
+        .flags {
+            .flag {
+                img {
+                    width: 45px;
+                    height: 45px;
+                }
+
+                span {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .service-container {
+        .container {
+            .top {
+                h3 {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+
+    .flags-section {
+        .flags {
+            grid-template-columns: 1fr 1fr;
+
+            .flag {
+                flex-direction: column;
+
+                img {
+                    width: 45px;
+                    height: 45px;
+                }
+
+                span {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

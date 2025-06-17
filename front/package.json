@@ -1,0 +1,35 @@
+{
+  "name": "main-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.11.0",
+    "@primevue/themes": "^4.2.3",
+    "@vuepic/vue-datepicker": "^11.0.2",
+    "axios": "^1.7.8",
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
+    "moment": "^2.30.1",
+    "nprogress": "^0.2.0",
+    "nuxt": "^3.14.1592",
+    "primevue": "^4.2.3",
+    "sweetalert2": "^11.14.5",
+    "toastify-js": "^1.12.0",
+    "vue": "latest",
+    "vue-router": "latest",
+    "vue3-loading-overlay": "^0.0.0",
+    "vue3-recaptcha-v2": "^2.1.0",
+    "yup": "^1.4.0"
+  },
+  "devDependencies": {
+    "@primevue/nuxt-module": "^4.2.3",
+    "sass-embedded": "^1.81.0"
+  }
+}

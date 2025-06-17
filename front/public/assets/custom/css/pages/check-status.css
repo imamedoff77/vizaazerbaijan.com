@@ -1,0 +1,63 @@
+.check-status {
+  padding: 50px 0;
+}
+.check-status .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+}
+.check-status .container .top .title {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  color: #101828;
+  margin-bottom: 30px;
+}
+.check-status .container .top .description {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(16, 24, 40, 0.6);
+  text-align: justify;
+}
+.check-status .container .middle label {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(16, 24, 40, 0.6);
+  margin-bottom: 10px;
+}
+.check-status .container .middle input::-webkit-input-placeholder {
+  color: rgba(16, 24, 40, 0.6);
+}
+.check-status .container .middle input::-moz-placeholder {
+  color: rgba(16, 24, 40, 0.6);
+}
+.check-status .container .middle input:-ms-input-placeholder {
+  color: rgba(16, 24, 40, 0.6);
+}
+.check-status .container .middle input::-ms-input-placeholder {
+  color: rgba(16, 24, 40, 0.6);
+}
+.check-status .container .middle input, .check-status .container .middle input::placeholder {
+  color: rgba(16, 24, 40, 0.6);
+}
+.check-status .container .middle .btn-primary {
+  padding: 10px 25px;
+  background-color: #338af3;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.check-status .container .middle .btn-primary:hover {
+  background-color: #101828;
+}
+.check-status .container .bottom {
+  font-size: 16px;
+  font-weight: 400;
+  color: #010201;
+  text-align: justify;
+}

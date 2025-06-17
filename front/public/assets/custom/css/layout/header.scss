@@ -1,0 +1,208 @@
+.main-navbar {
+    z-index: 999;
+    height: 130px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: opacity 0.450s ease-out;
+
+
+    &.hide {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    &.show {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    &.sticky-top {
+        position: sticky;
+        width: 100%;
+        background: #fff;
+        top: 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background: #fff !important;
+
+        .navbar-brand {
+            span {
+                color: rgb(16, 24, 40);
+            }
+        }
+
+        #mainNavbarContent {
+            .navbar-nav {
+                .nav-item {
+                    .nav-link {
+                        color: rgb(16, 24, 40);
+
+                        &:hover {
+                            color: #338af3;
+                        }
+
+                        &.active {
+                            color: #338af3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        svg {
+            width: 50px;
+            height: 50px;
+        }
+
+        span {
+            font-size: 22px;
+            font-weight: 700;
+            color: #fff;
+        }
+    }
+
+    .navbar-toggler {
+        border: none;
+
+        svg {
+            color: #fff;
+        }
+    }
+
+    #mainNavbarContent {
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    color: #fff;
+                    font-weight: 600;
+                    font-size: 16px;
+                    transition: 300ms ease all;
+
+                    &:hover {
+                        color: #D1D3D4;
+                        transform: translateY(-2px);
+                    }
+
+                    &.active {
+                        color: #D1D3D4;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.main-sidebar {
+    .offcanvas-header {
+        border-bottom: 1px solid #eee;
+
+        .offcanvas-title {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            svg {
+                width: 50px;
+                height: 50px;
+            }
+
+            span {
+                font-size: 22px;
+                font-weight: 700;
+                color: rgb(16, 24, 40);
+            }
+        }
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+        margin: 0;
+        list-style: none;
+
+        .nav-item {
+            .nav-link {
+                color: #101828;
+                font-weight: 600;
+                font-size: 16px;
+                transition: 300ms ease all;
+
+                &:hover {
+                    color: #338af3;
+                    transform: translateY(-2px);
+                }
+
+                &.active {
+                    color: #338af3;
+                }
+            }
+        }
+    }
+}
+
+body.layout-2 {
+    .main-navbar {
+        background: radial-gradient(100% 100% at 0% 0%, rgba(252, 252, 252, .77) 0%, rgba(10, 138, 240, .11) 55.21%, rgba(217, 217, 217, 0) 100%);
+
+        .navbar-brand {
+            span {
+                color: rgb(16, 24, 40);
+            }
+        }
+
+        #mainNavbarContent {
+            .navbar-nav {
+                .nav-item {
+                    .nav-link {
+                        color: rgb(16, 24, 40);
+
+                        &:hover {
+                            color: #338af3;
+                        }
+
+                        &.active {
+                            color: #338af3;
+                        }
+                    }
+                }
+            }
+        }
+
+        .navbar-toggler {
+
+            svg {
+                color: rgb(16, 24, 40);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .main-navbar {
+        height: 100px;
+
+        .navbar-toggler {
+            svg {
+                color: #fff;
+            }
+        }
+
+        &.sticky-top {
+            .navbar-toggler {
+                svg {
+                    color: rgb(16, 24, 40);
+                }
+            }
+        }
+    }
+}

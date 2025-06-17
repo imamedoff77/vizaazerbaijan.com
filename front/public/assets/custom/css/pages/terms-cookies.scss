@@ -1,0 +1,72 @@
+.terms-cookies-page {
+  .terms-container {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .title {
+      text-align: center;
+      font-size: 45px;
+      font-weight: 700;
+      color: #101828;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      font-size: 23px;
+      font-weight: 600;
+      color: #101828;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      color: rgba(16, 24, 40, 0.6);
+      text-align: justify;
+    }
+
+    .term {
+      margin-top: 30px;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 991px) {
+  .terms-page {
+    .contact-container {
+      max-width: 768px;
+
+      .title {
+        font-size: 25px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .terms-page {
+    .contact-container {
+      max-width: 100%;
+      margin: 0;
+      padding: 0 15px;
+
+      .title {
+        font-size: 25px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+}
